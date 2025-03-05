@@ -1,4 +1,4 @@
-
+/* 
 *{
     margin: 0;
     padding: 0;
@@ -50,4 +50,22 @@
     .wrapper{
         grid-template-columns: repeat(5, 1fr);
     }
-} 
+}  */
+
+
+.decrementStyle{
+    background-color: red;
+    border: none;
+
+}
+
+.incrementStyle{
+    background-color: green;
+    border: none;
+
+}
+
+
+
+
+

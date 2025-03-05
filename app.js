@@ -196,43 +196,101 @@
 // push, pop, shift, unshift, splice, map, filter, find;
 
 
-let arrNames = ["Michael", "Gabriel", "Israel", "Raphael"];
+// let arrNames = ["Michael", "Gabriel", "Israel", "Raphael"];
 
-console.log(arrNames);
+// console.log(arrNames);
 
-arrNames.push("Daniel");
+// arrNames.push("Daniel");
 
-console.log(arrNames);
+// console.log(arrNames);
 
-arrNames.pop();
+// arrNames.pop();
 
-console.log(arrNames);
+// console.log(arrNames);
 
-arrNames.shift();
+// arrNames.shift();
 
-console.log(arrNames);
+// console.log(arrNames);
 
-arrNames.unshift("Paul");
+// arrNames.unshift("Paul");
 
-console.log(arrNames);
+// console.log(arrNames);
 
-arrNames.splice(1, 2);
+// arrNames.splice(1, 2);
 
-console.log(arrNames);
+// console.log(arrNames);
 
-arrNames.push("Peter");
+// arrNames.push("Peter");
 
-console.log(arrNames);
-
-
-// arrNames.map(name => console.log(name + "son"));
+// console.log(arrNames);
 
 
-let newArrNames = ['Michael', 'Gabriel', 'Israel', 'Raphael', 'Daniel', "Jacob"];
+// // arrNames.map(name => console.log(name + "son"));
 
-let res = newArrNames.filter(name => name.endsWith("l"));
 
-console.log(res);
+// let newArrNames = ['Michael', 'Gabriel', 'Israel', 'Raphael', 'Daniel', "Jacob"];
+
+// let res = newArrNames.filter(name => name.endsWith("l"));
+
+// console.log(res);
+
+
+
+const counterDiv = document.getElementById('counter');  
+const decrementButton = document.getElementById('decrement');
+const incrementButton = document.getElementById('increment');
+
+decrementButton.className = "decrementStyle";
+incrementButton.className = "incrementStyle";
+
+let count = 0;
+
+counterDiv.textContent = count;
+
+const updateCount = () => {
+    counterDiv.textContent = count;
+}
+
+incrementButton.addEventListener('click', ()=> {
+    count = count + 1;
+    updateCount();
+})
+
+decrementButton.addEventListener('click', ()=> {
+    if(count > 0) count = count - 1;
+    updateCount();
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
