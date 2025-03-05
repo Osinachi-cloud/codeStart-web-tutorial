@@ -53,17 +53,31 @@
 }  */
 
 
-.decrementStyle{
+/* .decrementStyle{
     background-color: red;
     border: none;
-
 }
 
 .incrementStyle{
     background-color: green;
     border: none;
+} */
 
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    background-color: #f9f9f9;
 }
+
+.card{
+    background-color: #fff;
+}
+
+
+
+
 
 
 
