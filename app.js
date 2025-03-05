@@ -236,30 +236,77 @@
 
 
 
-const counterDiv = document.getElementById('counter');  
-const decrementButton = document.getElementById('decrement');
-const incrementButton = document.getElementById('increment');
+// const counterDiv = document.getElementById('counter');  
+// const decrementButton = document.getElementById('decrement');
+// const incrementButton = document.getElementById('increment');
 
-decrementButton.className = "decrementStyle";
-incrementButton.className = "incrementStyle";
+// decrementButton.className = "decrementStyle";
+// incrementButton.className = "incrementStyle";
 
-let count = 0;
+// let count = 0;
 
-counterDiv.textContent = count;
+// counterDiv.textContent = count;
 
-const updateCount = () => {
-    counterDiv.textContent = count;
-}
+// const updateCount = () => {
+//     counterDiv.textContent = count;
+// }
 
-incrementButton.addEventListener('click', ()=> {
-    count = count + 1;
-    updateCount();
-})
+// incrementButton.addEventListener('click', ()=> {
+//     count = count + 1;
+//     updateCount();
+// })
 
-decrementButton.addEventListener('click', ()=> {
-    if(count > 0) count = count - 1;
-    updateCount();
-})
+// decrementButton.addEventListener('click', ()=> {
+//     if(count > 0) count = count - 1;
+//     updateCount();
+// })
+
+
+const wrapper = document.getElementById("wrapper");
+wrapper.className = "wrapper";
+
+const card = document.createElement("div");
+card.className = "card";
+
+const img = document.createElement("img");
+img.src = "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg";
+img.style.height = "100px";
+
+const title = document.createElement("h3");
+title.textContent = "Polo";
+
+const price = document.createElement("h5");
+price.textContent = "$40";
+price.style.color = "green";
+
+const description = document.createElement("p");
+description.textContent = "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches)";
+description.style.color = "grey";
+
+const submitButton = document.createElement("button");
+submitButton.textContent = "open";
+submitButton.style.background = "orange";
+
+card.appendChild(img);
+card.appendChild(title);
+card.appendChild(price);
+card.appendChild(description);
+card.appendChild(submitButton);
+
+wrapper.appendChild(card);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
