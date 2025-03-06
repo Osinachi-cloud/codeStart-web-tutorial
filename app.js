@@ -262,38 +262,55 @@
 // })
 
 
+
 const wrapper = document.getElementById("wrapper");
 wrapper.className = "wrapper";
 
 const card = document.createElement("div");
 card.className = "card";
 
-const img = document.createElement("img");
-img.src = "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg";
-img.style.height = "100px";
+const imageWrapper = document.createElement("div");
+imageWrapper.className = "img-wrapper";
 
-const title = document.createElement("h3");
-title.textContent = "Polo";
+const image = document.createElement("img");
+image.src = "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg";
 
-const price = document.createElement("h5");
+const contentWrapper = document.createElement("div");
+contentWrapper.className = "content-wrapper";
+
+const titleBlock = document.createElement("div");
+titleBlock.className = "title-block";
+
+const title = document.createElement("span");
+title.title = "title"
+title.textContent = "Hand Bag";
+
+const des = document.createElement("p");
+des.className = "des";
+des.textContent = "Nice female Hand bag";
+
+const price = document.createElement("h3");
+price.className = "price";
 price.textContent = "$40";
-price.style.color = "green";
 
-const description = document.createElement("p");
-description.textContent = "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches)";
-description.style.color = "grey";
+const button = document.createElement("button");
+button.className = "buy-now";
+button.textContent = "open";
 
-const submitButton = document.createElement("button");
-submitButton.textContent = "open";
-submitButton.style.background = "orange";
+card.appendChild(imageWrapper);
+card.appendChild(contentWrapper);
+imageWrapper.appendChild(image);
+contentWrapper.appendChild(titleBlock);
+card.appendChild(button);
 
-card.appendChild(img);
-card.appendChild(title);
-card.appendChild(price);
-card.appendChild(description);
-card.appendChild(submitButton);
+titleBlock.appendChild(title);
+contentWrapper.appendChild(price);
+contentWrapper.appendChild(des);
 
-wrapper.appendChild(card);
+
+wrapper.append(card);
+
+
 
 
 
